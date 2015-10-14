@@ -1,0 +1,12 @@
+<% content_for :meta_description, @item.title %>
+<% content_for :title, @item.title %>
+
+<%= render @item %>
+
+<div class="actions well">
+  <div class="page-actions">
+    <div class="btn-group" role="group">
+      <%= link_to t('back'), :back, class: 'btn btn-default' %>
+    </div>
+  </div>
+</div>

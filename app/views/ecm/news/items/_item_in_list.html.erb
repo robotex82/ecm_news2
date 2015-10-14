@@ -1,0 +1,20 @@
+<div class="media">
+  <div class="media-left">
+    <% if item.preview_picture.present? %>
+      <%= link_to(item, class: 'col-lg-2') do %>
+        <img class="media-object thumbnail img-responsive" src="<%= item.preview_picture.image.url(:default_thumb) %>" alt="...">
+      <% end %>
+    <% else %>
+      <div class="col-lg-2"></div>
+    <% end %>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= item.title %></h4>
+    <div class="news-body truncate lines-3 bottom-margin-1">
+      <%= mu(item, :body) %>
+    </div>
+    <div class="object-actions">
+      <%= link_to(t('ecm.news.item.actions.more'), item, class: 'btn btn-primary') %>
+    </div>
+  </div>
+</div>
