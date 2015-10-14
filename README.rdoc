@@ -17,6 +17,9 @@ Generate initializer:
 
   > rails generate ecm:news:install
 
+Generate the locales
+  > rails generate ecm:news:locales
+
 Add migrations:
 
   > rake ecm_news_engine:install:migrations
