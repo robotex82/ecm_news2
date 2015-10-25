@@ -1,6 +1,5 @@
 module Ecm::NewsHelper
-  def render_news(count = nil)
-    count = count ||= Ecm::News::Configuration.render_news_default_count
+  def render_news(count = Ecm::News::Configuration.render_news_default_count)
     items = Ecm::News::Item.published.where(:locale => I18n.locale.to_s).order("published_at DESC").limit(count)
     return I18n.t('ecm.news.item.messages.empty') if items.empty?
     output = ''

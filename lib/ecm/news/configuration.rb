@@ -14,15 +14,19 @@ module Ecm
       end
 
       mattr_accessor :markup_languages do
-        []
+        ['textile']
       end
 
-      mattr_accessor :news_item_preview_length do
-        250
+      mattr_accessor :news_item_preview_lines do
+        3
       end
 
       mattr_accessor :render_news_default_count do
         2
+      end
+
+      mattr_accessor :show_publish_time do
+        true
       end
 
       mattr_accessor :base_controller do

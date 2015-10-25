@@ -9,6 +9,8 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
+require 'activeadmin'
+require 'less-rails'
 require 'twitter-bootstrap-rails'
 require 'devise'
 require "ecm_news2"

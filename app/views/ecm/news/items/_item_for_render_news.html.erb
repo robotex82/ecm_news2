@@ -1,8 +1,12 @@
 <div class="news-item small-preview">
-  <h2 class="item-title"><%= item.title %></h2>
-  <small class="item-published_at"><%= I18n.l(item.published_at) %></small>
-  <p class="item-body"><%= truncate(mu(item, :body), :length => Ecm::News::Configuration.news_item_preview_length, :separator => ' ').html_safe %></p>
-  <%= link_to(item, :class => 'btn more-link') do %><i class="icon-arrow-right"></i> <%= I18n.t('ecm.news.item.actions.more') %><% end %>
-  <hr />
+  <h4 class="item-title"><%= item.title %></h4>
+  <% if Ecm::News::Configuration.show_publish_time %>
+    <small class="item-published_at"><%= I18n.l(item.published_at) %></small>
+  <% end %>
+  <div class="item-body truncate lines-<%= Ecm::News::Configuration.news_item_preview_lines %> bottom-margin-2"><%= mu(item, :body) %></div>
+
+  <div class="item-actions bottom-margin-2">
+    <%= link_to(t('ecm.news.item.actions.more'), item, :class => 'btn btn-primary btn-xs more-link') %>
+  </div>
 </div>
 

@@ -1,9 +1,14 @@
 <div class="news-item show">
   <h1><%= item.title %></h1>
-  <small class="item-published_at"><%= I18n.l(item.published_at) %></small>
+
+  <% if Ecm::News::Configuration.show_publish_time %>
+    <small class="item-published_at"><%= I18n.l(item.published_at) %></small>
+  <% end %>
+
   <% if item.preview_picture.present? %>
     <img class="img-responsive" src="<%= item.preview_picture.image.url %>" alt="...">
   <% end %>
-  <p class="item-body"><%= mu(item, :body) %></p>
+
+  <div class="item-body"><%= mu(item, :body) %></div>
 </div>
 

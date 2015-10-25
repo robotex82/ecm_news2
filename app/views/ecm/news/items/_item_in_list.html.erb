@@ -10,7 +10,7 @@
   </div>
   <div class="media-body">
     <h4 class="media-heading"><%= item.title %></h4>
-    <div class="news-body truncate lines-3 bottom-margin-1">
+    <div class="news-body truncate lines-<%= Ecm::News::Configuration.news_item_preview_lines %> bottom-margin-1">
       <%= mu(item, :body) %>
     </div>
     <div class="object-actions">

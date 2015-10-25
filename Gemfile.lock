@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ecm_news2 (0.1.12.pre)
+    ecm_news2 (1.0.0)
       activeadmin (~> 1.0.0.pre2)
       acts_as_markup
       acts_as_published (~> 1.0.1)
@@ -10,18 +10,6 @@ PATH
       friendly_id
       kaminari
       rails (>= 4.0.0, < 5.0.0)
-
-PATH
-  remote: ~/rails/rails4-modules/ecm_pictures2-master
-  specs:
-    ecm_pictures2 (1.0.1)
-      RedCloth
-      active_admin-acts_as_list (~> 0.0.8)
-      acts_as_list
-      acts_as_markup
-      friendly_id
-      paperclip
-      rails (>= 4.0, < 5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -92,7 +80,7 @@ GEM
     bootstrap-kaminari-views (0.0.5)
       kaminari (>= 0.13)
       rails (>= 3.1)
-    bourbon (4.2.5)
+    bourbon (4.2.6)
       sass (~> 3.4)
       thor (~> 0.19)
     builder (3.2.2)
@@ -124,6 +112,14 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    ecm_pictures2 (1.0.3)
+      RedCloth
+      active_admin-acts_as_list (~> 0.0.8)
+      acts_as_list
+      acts_as_markup
+      friendly_id
+      paperclip
+      rails (>= 4.0, < 5.0)
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
@@ -330,11 +326,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activeadmin
   capybara
   coffee-rails
   devise
   ecm_news2!
-  ecm_pictures2!
   factory_girl_rails
   guard-bundler
   guard-rails
@@ -352,4 +348,4 @@ DEPENDENCIES
   yard
 
 BUNDLED WITH
-   1.10.5
+   1.10.6

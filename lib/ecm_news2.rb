@@ -3,6 +3,7 @@ require 'acts_as_published'
 require 'friendly_id'
 require 'kaminari'
 require 'bootstrap-kaminari-views'
+require 'ecm_pictures2'
 
 require 'ecm/news/engine'
 require 'ecm/news/configuration'

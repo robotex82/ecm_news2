@@ -17,7 +17,7 @@ gem "jquery-rails"
 # gem 'ruby-debug'
 
 # gem 'acts_as_published', path: '~/rails/modules/acts_as_published-master'
-gem 'ecm_pictures2', :path => '~/rails/rails4-modules/ecm_pictures2-master'
+# gem 'ecm_pictures2', :path => '~/rails/rails4-modules/ecm_pictures2-master'
 
 unless ENV['TRAVIS_RUBY_VERSION'].nil?
   gem 'pg'
