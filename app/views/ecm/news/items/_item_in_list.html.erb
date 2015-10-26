@@ -1,11 +1,11 @@
 <div class="media">
   <div class="media-left">
     <% if item.preview_picture.present? %>
-      <%= link_to(item, class: 'col-lg-2') do %>
+      <%= link_to(item, class: Ecm::News::Configuration.news_item_preview_thumbnail_link_classes) do %>
         <img class="media-object thumbnail img-responsive" src="<%= item.preview_picture.image.url(:default_thumb) %>" alt="...">
       <% end %>
     <% else %>
-      <div class="col-lg-2"></div>
+      <%= content_tag(:div, nil, class: Ecm::News::Configuration.news_item_preview_thumbnail_link_classes) %>
     <% end %>
   </div>
   <div class="media-body">

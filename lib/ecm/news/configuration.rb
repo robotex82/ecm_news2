@@ -29,6 +29,10 @@ module Ecm
         true
       end
 
+      mattr_accessor :news_item_preview_thumbnail_link_classes do
+        'col-lg-4'
+      end
+
       mattr_accessor :base_controller do
         'ApplicationController'
       end

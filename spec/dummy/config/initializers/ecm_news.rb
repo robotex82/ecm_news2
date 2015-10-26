@@ -24,6 +24,12 @@ Ecm::News.configure do |config|
   # Default: config.show_publish_time = true
   config.show_publish_time = true
 
+  # CSS Classes for the preview thumbnail link
+  #
+  # Default: config.news_item_preview_thumbnail_link_classes = 'col-lg-4'
+  #
+  config.news_item_preview_thumbnail_link_classes = 'col-lg-4'
+
   # Set the base controller for the contact form
   #
   # Default: config.base_controller = 'ApplicationController'
