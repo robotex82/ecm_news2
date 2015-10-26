@@ -2,6 +2,15 @@
 
 News module for active admin. This version supports rails 4.x and twitter bootstrap 3. For legacy support use ecm_news
 
+= Prerequisites
+
+Please make sure, that you have set a root_path in your application, i.e.:
+
+    # config/routes
+    Rails.application.routes.draw do
+      root to: 'home#index'
+    end
+
 = Installation
 
 Add the gem to your bundle:
