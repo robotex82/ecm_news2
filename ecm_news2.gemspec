@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", ">= 4.0.0", "< 5.0.0"
 
   # Module dependencies
-  s.add_dependency 'activeadmin', '~> 1.0.0.pre2'
   s.add_dependency 'acts_as_markup'
   s.add_dependency 'acts_as_published', '~> 1.0.1'
   s.add_dependency 'friendly_id'
@@ -39,7 +38,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "yard"
 
   # Active admin
-  s.add_development_dependency 'activeadmin'
+  s.add_development_dependency 'activeadmin', '~> 1.0.0.pre2'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'less-rails'
   s.add_development_dependency 'sass-rails'

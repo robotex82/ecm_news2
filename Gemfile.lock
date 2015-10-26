@@ -1,8 +1,7 @@
 PATH
   remote: .
   specs:
-    ecm_news2 (1.0.0)
-      activeadmin (~> 1.0.0.pre2)
+    ecm_news2 (1.0.1)
       acts_as_markup
       acts_as_published (~> 1.0.1)
       bootstrap-kaminari-views
@@ -326,7 +325,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (~> 1.0.0.pre2)
   capybara
   coffee-rails
   devise
