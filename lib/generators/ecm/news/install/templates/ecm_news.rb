@@ -24,6 +24,12 @@ Ecm::News.configure do |config|
   # Default: config.show_publish_time = true
   config.show_publish_time = true
 
+  # CSS Classes for the preview container div
+  #
+  # Default: config.news_item_preview_div_classes = 'media ecm-news-item bottom-margin-2'
+  #
+  config.news_item_preview_div_classes = 'media ecm-news-item bottom-margin-2'
+
   # CSS Classes for the preview thumbnail link
   #
   # Default: config.news_item_preview_thumbnail_link_classes = 'col-lg-4'

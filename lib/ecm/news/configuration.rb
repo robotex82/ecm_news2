@@ -33,6 +33,10 @@ module Ecm
         'col-lg-4'
       end
 
+      mattr_accessor :news_item_preview_div_classes do
+        'media ecm-news-item bottom-margin-2'
+      end
+
       mattr_accessor :base_controller do
         'ApplicationController'
       end

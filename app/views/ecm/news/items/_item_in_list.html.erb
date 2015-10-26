@@ -1,4 +1,4 @@
-<div class="media">
+<div class="<%= Ecm::News::Configuration.news_item_preview_div_classes %>" id="<%= item.class.name.underscore.gsub('/', '-') %>-<%= item.to_param %>">
   <div class="media-left">
     <% if item.preview_picture.present? %>
       <%= link_to(item, class: Ecm::News::Configuration.news_item_preview_thumbnail_link_classes) do %>
