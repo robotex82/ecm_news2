@@ -6,7 +6,7 @@
   <div class="item-body truncate lines-<%= Ecm::News::Configuration.news_item_preview_lines %> bottom-margin-2"><%= mu(item, :body) %></div>
 
   <div class="item-actions bottom-margin-2">
-    <%= link_to(t('ecm.news.item.actions.more'), item, :class => 'btn btn-primary btn-xs more-link') %>
+    <%= link_to(t('ecm.news.views.actions.more'), item, class: 'btn btn-primary more-link') %>
   </div>
 </div>
 
