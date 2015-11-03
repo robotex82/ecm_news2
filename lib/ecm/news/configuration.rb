@@ -40,6 +40,10 @@ module Ecm
       mattr_accessor :base_controller do
         'ApplicationController'
       end
+
+      mattr_accessor :prevent_textile_rendering_in_html do
+        true
+      end
     end
   end
 end
