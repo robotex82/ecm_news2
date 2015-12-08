@@ -48,6 +48,14 @@ Add the routes:
 
   <%= render_news(count) %>
 
+= Running specs
+
+    gem install bundler
+    bundle
+    cd spec/dummy && rake db:migrate RAILS_ENV=test && cd ../..
+    guard
+
+
 = License
 
 This project rocks and uses MIT-LICENSE.

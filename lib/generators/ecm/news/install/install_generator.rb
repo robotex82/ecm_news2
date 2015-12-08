@@ -7,7 +7,7 @@ module Ecm
         source_root File.expand_path('../templates', __FILE__)
 
         def generate_intializer
-          copy_file 'ecm_news.rb', 'config/initializers/ecm_news.rb'
+          copy_file 'initializer.rb', 'config/initializers/ecm_news.rb'
         end
       end
     end

@@ -11,11 +11,11 @@ Gem::Specification.new do |s|
   s.email       = ['roberto@vasquez-angel.de']
   s.homepage    = 'https://github.com/robotex82/ecm_news2'
   s.summary     = 'ECM News module.'
-  s.description = 'Preovides News functionality.'
+  s.description = 'Provides News functionality for ruby on rails.'
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
-  s.add_dependency 'rails', '> 4.0'
+  s.add_dependency 'rails', '>= 4.0'
 
   # Module dependencies
   s.add_dependency 'acts_as_markup'
@@ -31,12 +31,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'jquery-rails'
   s.add_development_dependency 'devise'
   s.add_development_dependency 'twitter-bootstrap-rails'
-
-  # Development Server
   s.add_development_dependency 'thin'
-
-  # Documentation
-  s.add_development_dependency 'yard'
 
   # Active admin
   s.add_development_dependency 'activeadmin', '~> 1.0.0.pre2'
