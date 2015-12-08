@@ -28,7 +28,7 @@ include Ecm::Pictures::ActiveAdmin::PictureableHelper
                 attached_pictures_attributes: []
 
   # menu entry settings
-  menu :parent => Proc.new { I18n.t('ecm.news.active_admin.menu') }.call
+  menu parent: proc { I18n.t('ecm.news.active_admin.menu') }.call
 
   # scopes
   scope :all
@@ -38,13 +38,13 @@ include Ecm::Pictures::ActiveAdmin::PictureableHelper
   form do |f|
     f.inputs do
       f.input :title
-      f.input :locale, :as => :select, :collection => I18n.available_locales.map(&:to_s)
+      f.input :locale, as: :select, collection: I18n.available_locales.map(&:to_s)
       f.input :body
-      f.input :published, :as => :boolean
+      f.input :published, as: :boolean
     end
 
     f.inputs do
-      f.input :markup_language, :as => :select, :collection => Ecm::News::Configuration.markup_languages.map(&:to_s)
+      f.input :markup_language, as: :select, collection: Ecm::News::Configuration.markup_languages.map(&:to_s)
     end
 
     form_inputs_for_pictureable(f)
@@ -57,7 +57,7 @@ include Ecm::Pictures::ActiveAdmin::PictureableHelper
     column :title
     column :locale
     column :body do |item|
-      truncate(mu(item, :body), :length => 250, :separator => ' ').html_safe
+      truncate(mu(item, :body), length: 250, separator: ' ').html_safe
     end
     acts_as_published_columns
     column :created_at
@@ -65,7 +65,7 @@ include Ecm::Pictures::ActiveAdmin::PictureableHelper
     actions
   end
 
-  show :title => :to_s do
+  show title: :to_s do
     attributes_table do
       row :title
       row :locale
@@ -85,4 +85,3 @@ include Ecm::Pictures::ActiveAdmin::PictureableHelper
     panel_for_pictureable
   end # show
 end if defined?(::ActiveAdmin)
-

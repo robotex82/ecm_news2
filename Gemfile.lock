@@ -1,14 +1,14 @@
 PATH
   remote: .
   specs:
-    ecm_news2 (1.0.4)
+    ecm_news2 (1.2.0)
       acts_as_markup
-      acts_as_published (~> 1.0.1)
+      acts_as_published
       bootstrap-kaminari-views
       ecm_pictures2
       friendly_id
       kaminari
-      rails (>= 4.0.0, < 5.0.0)
+      rails (> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -91,7 +91,7 @@ GEM
       xpath (~> 2.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.7)
+    cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
@@ -111,7 +111,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    ecm_pictures2 (1.0.4)
+    ecm_pictures2 (1.1.2)
       RedCloth
       active_admin-acts_as_list (~> 0.0.8)
       acts_as_list
@@ -204,7 +204,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
-    paperclip (4.3.1)
+    paperclip (4.3.2)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
@@ -339,7 +339,7 @@ DEPENDENCIES
   rails-dummy
   rspec-rails
   sass-rails
-  shoulda-matchers (~> 2.8.0)
+  shoulda-matchers
   sqlite3
   therubyracer
   thin

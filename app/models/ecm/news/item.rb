@@ -1,16 +1,16 @@
 class Ecm::News::Item < ActiveRecord::Base
   # associations
-  has_many :attached_pictures, :as => :pictureable,
-                               :class_name => Ecm::Pictures::AttachedPicture,
-                               :dependent => :destroy
-  has_many :pictures, :through => :attached_pictures,
-                      :class_name => Ecm::Pictures::Picture
+  has_many :attached_pictures, as: :pictureable,
+                               class_name: Ecm::Pictures::AttachedPicture,
+                               dependent: :destroy
+  has_many :pictures, through: :attached_pictures,
+                      class_name: Ecm::Pictures::Picture
 
-  accepts_nested_attributes_for :attached_pictures, :allow_destroy => true
-  accepts_nested_attributes_for :pictures, :allow_destroy => true
+  accepts_nested_attributes_for :attached_pictures, allow_destroy: true
+  accepts_nested_attributes_for :pictures, allow_destroy: true
 
   # acts as markup
-  acts_as_markup :language => :variable, :columns => [ :body ]
+  acts_as_markup language: :variable, columns: [:body]
 
   # acts as published
   include ActsAsPublished::ActiveRecord
@@ -33,15 +33,15 @@ class Ecm::News::Item < ActiveRecord::Base
 
   # friendly id
   extend FriendlyId
-  friendly_id :title, :use => [:slugged, :finders]
+  friendly_id :title, use: [:slugged, :finders]
 
   # validations
-  validates :title, :presence => true, :uniqueness => true
-  validates :locale, :presence  => true,
-                     :inclusion => I18n.available_locales.map(&:to_s)
-  validates :body,  :presence => true
-  validates :markup_language, :presence  => true,
-                              :inclusion => Ecm::News::Configuration.markup_languages.map(&:to_s)
+  validates :title, presence: true, uniqueness: true
+  validates :locale, presence: true,
+                     inclusion: I18n.available_locales.map(&:to_s)
+  validates :body, presence: true
+  validates :markup_language, presence: true,
+                              inclusion: Ecm::News::Configuration.markup_languages.map(&:to_s)
 
   def human
     title
@@ -63,4 +63,3 @@ class Ecm::News::Item < ActiveRecord::Base
     end
   end
 end
-

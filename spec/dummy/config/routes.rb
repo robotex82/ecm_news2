@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   Ecm::News::Routing.routes(self)
 
-  root to: 'ecm/news/items#index'
+  root to: 'home#index'
 end

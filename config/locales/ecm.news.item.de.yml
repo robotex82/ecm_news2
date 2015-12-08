@@ -11,6 +11,7 @@ de:
         link_to_more: Vorschau verlinken
         locale: Sprache
         markup_language: Markup Sprache
+        preview_picture: Vorschau
         published: Veröffentlicht?
         published_at: Veröffentlicht am
         slug: Freundliche ID

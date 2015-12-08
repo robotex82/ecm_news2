@@ -12,7 +12,7 @@ Ecm::News.configure do |config|
   # Accepted markup languages
   #
   # default: config.markup_languages = %w[ textile ]
-  config.markup_languages = %w[ textile ]
+  config.markup_languages = %w( textile )
 
   # Default markup language
   #
@@ -48,4 +48,3 @@ Ecm::News.configure do |config|
   #
   config.prevent_textile_rendering_in_html = true
 end
-

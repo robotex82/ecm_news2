@@ -7,10 +7,10 @@ class CreateEcmNewsItems < ActiveRecord::Migration
       t.text :body
       t.timestamp :published_at
       t.boolean :link_to_more
-      
+
       # acts as markup
       t.string :markup_language
-      
+
       # friendly id
       t.string :slug
 
