@@ -4,7 +4,7 @@
 
 <%= render :partial => 'item_in_list', :collection => @items, :as => :item %>
 
-<%= paginate @items, :theme => 'twitter-bootstrap' %>
+<%= paginate @items, theme: 'twitter-bootstrap-3' %>
 
 <div class="well page-actions">
   <%= link_to(t('ecm.news.views.actions.back'), root_path, class: 'btn btn-default') %>
