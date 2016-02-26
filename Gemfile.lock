@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ecm_news2 (2.0.0)
+    ecm_news2 (2.0.3)
       acts_as_markup
       acts_as_published
       bootstrap-kaminari-views
@@ -33,8 +33,6 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    active_admin-acts_as_list (0.0.8)
-      rails (>= 3.2, < 5.0)
     activeadmin (1.0.0.pre2)
       arbre (~> 1.0, >= 1.0.2)
       bourbon
@@ -111,14 +109,13 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    ecm_pictures2 (1.1.2)
+    ecm_pictures2 (2.1.1)
       RedCloth
-      active_admin-acts_as_list (~> 0.0.8)
       acts_as_list
       acts_as_markup
       friendly_id
       paperclip
-      rails (>= 4.0, < 5.0)
+      rails (>= 4.0)
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
@@ -204,7 +201,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
-    paperclip (4.3.2)
+    paperclip (4.3.5)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
@@ -345,4 +342,4 @@ DEPENDENCIES
   twitter-bootstrap-rails
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
