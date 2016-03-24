@@ -11,6 +11,7 @@ en:
         link_to_more: link to more?
         locale: language
         markup_language: markup language
+        pictures: pictures
         preview_picture: preview
         published: published?
         published_at: published at
