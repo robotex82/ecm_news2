@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = 'ECM News module.'
   s.description = 'Provides News functionality for ruby on rails.'
 
-  s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
+  s.files = Dir['{app,config,db,lib}/**/*', 'spec/factories/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
   s.add_dependency 'rails', '>= 4.0'
 
