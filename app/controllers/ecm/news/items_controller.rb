@@ -4,6 +4,6 @@ class Ecm::News::ItemsController < Ecm::News::Configuration.base_controller.cons
   end
 
   def show
-    @item = Ecm::News::Item.published.where(locale: I18n.locale.to_s).find(params[:id])
+    @item = Ecm::News::Item.published.where(locale: I18n.locale.to_s).friendly.find(params[:id])
   end
 end

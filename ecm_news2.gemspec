@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   # Module dependencies
   s.add_dependency 'acts_as_markup'
   s.add_dependency 'acts_as_published'
-  s.add_dependency 'friendly_id'
+  s.add_dependency 'friendly_id', '>= 5.0'
   s.add_dependency 'kaminari'
   s.add_dependency 'bootstrap-kaminari-views'
   s.add_dependency 'ecm_pictures2'
