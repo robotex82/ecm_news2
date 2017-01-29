@@ -5,7 +5,9 @@ module Ecm::NewsHelper
     return I18n.t('ecm.news.item.messages.empty') if items.empty?
 
     output = Ecm::News::Configuration.prevent_textile_rendering_in_html ? '<notextile>' : ''
-    output << render(partial: 'ecm/news/items/item_for_render_news', collection: items, as: :item)
+    items.each_with_index do |item, index|
+      output << render(partial: 'ecm/news/items/item_for_render_news', locals: { item: item, index: (index + 1) })
+    end
     output << render(partial: 'ecm/news/render_news_footer')
     output << '</notextile>' if Ecm::News::Configuration.prevent_textile_rendering_in_html
     output.html_safe
