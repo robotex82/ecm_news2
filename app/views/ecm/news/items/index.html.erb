@@ -2,7 +2,9 @@
 <% content_for :title, t('ecm.news.news') %>
 <h1><%= t('ecm.news.news') %></h1>
 
-<%= render :partial => 'item_in_list', :collection => @items, :as => :item %>
+<% @items.each_with_index do |item, index| %>
+  <%= render partial: 'item_in_list', locals: { item: item, index: (index + 1) } %>
+<% end %>
 
 <%= paginate @items, theme: 'twitter-bootstrap-3' %>
 
