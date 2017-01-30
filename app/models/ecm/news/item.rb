@@ -55,6 +55,10 @@ class Ecm::News::Item < ActiveRecord::Base
     human
   end
 
+  def preview_picture_image_url(style = nil)
+    preview_picture.image.url(style) if preview_picture.respond_to?(:image) && preview_picture.image.respond_to?(:url)
+  end
+
   private
 
   def set_defaults
