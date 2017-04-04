@@ -24,21 +24,15 @@ Gem::Specification.new do |s|
   s.add_dependency 'kaminari'
   s.add_dependency 'bootstrap-kaminari-views'
   s.add_dependency 'ecm_pictures2'
+  s.add_dependency 'haml-rails'
+  s.add_dependency 'twitter-bootstrap-components-rails'
 
   # Dummy app
   s.add_development_dependency 'rails-dummy'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'jquery-rails'
-  s.add_development_dependency 'devise'
   s.add_development_dependency 'twitter-bootstrap-rails'
   s.add_development_dependency 'thin'
-
-  # Active admin
-  s.add_development_dependency 'activeadmin', '~> 1.0.0.pre2'
-  s.add_development_dependency 'coffee-rails'
-  s.add_development_dependency 'less-rails'
-  s.add_development_dependency 'sass-rails'
-  s.add_development_dependency 'therubyracer'
 
   # Tests
   s.add_development_dependency 'capybara'

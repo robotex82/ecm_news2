@@ -1,0 +1,9 @@
+- content_for :meta_description, @item.title
+- content_for :title, @item.title
+= render @item
+.row
+  .col-lg-12
+    .page-actions
+      = bootstrap_button_group do
+        = bootstrap_button(to: :back, context: :default) do
+          = t('.back')

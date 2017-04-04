@@ -1,19 +1,21 @@
 de:
-  active_admin:
-    scopes:
-      all: Alle
-      published: Veröffentlicht
-      unpublished: Nicht veröffentlicht
   ecm:
     news:
-      active_admin:
-        menu: News
       item:
         actions:
           all: Alle News anzeigen
         messages:
           empty: Keine News gefunden.
-      news: News
+      items:
+        index:
+          back: Zurück
+          title: News
+        item_for_render_news:
+          more: Weiterlesen
+        item_in_list:
+          more: Weiterlesen
+        show:
+          back: Zurück
       views:
         actions:
           back: Zurück

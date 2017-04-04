@@ -1,23 +1,25 @@
 en:
-  active_admin:
-    scopes:
-      all: All
-      published: Published
-      unpublished: Not published
   ecm:
     news:
-      active_admin:
-        menu: news
       item:
         actions:
-          all: show all
+          all: Show all
         messages:
-          empty: no news found.
-      news: news
+          empty: No news found.
+      items:
+        index:
+          back: Back
+          title: News
+        item_for_render_news:
+          more: Continue reading
+        item_in_list:
+          more: Continue reading
+        show:
+          back: Back
       views:
         actions:
-          back: back
-          more: continue reading
+          back: Back
+          more: Continue reading
   views:
     pagination:
       first: "&laquo; First"

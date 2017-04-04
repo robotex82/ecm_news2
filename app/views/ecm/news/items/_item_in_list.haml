@@ -1,0 +1,5 @@
+= bootstrap_responsive_media_object(image_options: { src: item.preview_picture_image_url(:media_object) }) do
+  %h4= item.title
+  = mu(item, :body)
+  = bootstrap_button(to: main_app.url_for(item)) do
+    = t('.more')

@@ -1,0 +1,12 @@
+- content_for :meta_description, t('.title')
+- content_for :title, t('.title')
+
+%h1= t('.title')
+
+- @items.each_with_index do |item, index|
+  = render partial: 'item_in_list', locals: { item: item, index: (index + 1) }
+
+= paginate @items, theme: 'twitter-bootstrap-3'
+
+= bootstrap_button(to: main_app.root_path, context: :primary) do
+  = t('.back')

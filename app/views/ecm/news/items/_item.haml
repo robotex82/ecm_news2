@@ -1,0 +1,9 @@
+.row
+  .col-lg-12
+    .news-item.show
+      %h1= item.title
+      - if Ecm::News::Configuration.show_publish_time
+        %small.item-published_at= I18n.l(item.published_at)
+      - if item.preview_picture.present?
+        %img.img-responsive.bottom-margin-2{:alt => item.preview_picture.description, :src => item.preview_picture.image.url, :title => item.preview_picture.description}/
+      .item-body= mu(item, :body)
