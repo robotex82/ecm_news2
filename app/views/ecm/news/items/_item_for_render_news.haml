@@ -2,5 +2,5 @@
   %h4= item.title
   .truncate.lines-3
     = mu(item, :body)
-  = bootstrap_button(to: main_app.url_for(item)) do
+  = bootstrap_button(to: ecm_news.url_for(item)) do
     = t('.more')

@@ -40,7 +40,7 @@ Migrate:
 Add the routes:
 
   # config/routes.rb
-  Ecm::News::Routing.routes(self)
+  mount Ecm::News::Engine, at: '/'
 
 = Usage
 
