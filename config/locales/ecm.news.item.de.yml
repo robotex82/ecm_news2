@@ -19,5 +19,5 @@ de:
         title: Titel
         updated_at: Aktualisiert am
   routes:
-    items: 'news-eintraege'
+    items: 'eintraege'
 

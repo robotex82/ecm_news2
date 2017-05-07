@@ -20,6 +20,8 @@ de:
         actions:
           back: Zurück
           more: Weiterlesen
+  routes:
+    ecm_news: news
   views:
     pagination:
       first: "&laquo; Erste Seite"

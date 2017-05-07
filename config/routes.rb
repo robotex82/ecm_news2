@@ -1,7 +1,10 @@
 Ecm::News::Engine.routes.draw do
   localized do
-    resources :items, only: [:index, :show] do
-      get 'page/:page', action: :index, on: :collection
+    scope :ecm_news do
+      resources :items, only: [:index, :show] do
+        get 'page/:page', action: :index, on: :collection
+      end
+      root to: 'items#index'
     end
   end
 end

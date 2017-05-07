@@ -1,5 +1,2 @@
   
-  # ECM News Frontend Routing
-  localized do
-    Ecm::News::Routing.routes(self)
-  end
+  mount Ecm::News::Engine, at: '/'

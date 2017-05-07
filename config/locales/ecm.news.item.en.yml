@@ -19,5 +19,5 @@ en:
         title: title
         updated_at: updated at
   routes:
-    ecm_news_items: news-items
+    ecm_news_items: items
 
