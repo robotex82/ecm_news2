@@ -1,10 +1,10 @@
 class Ecm::News::Item < ActiveRecord::Base
   # associations
   has_many :attached_pictures, as: :pictureable,
-                               class_name: Ecm::Pictures::AttachedPicture,
+                               class_name: 'Ecm::Pictures::AttachedPicture',
                                dependent: :destroy
   has_many :pictures, through: :attached_pictures,
-                      class_name: Ecm::Pictures::Picture
+                      class_name: 'Ecm::Pictures::Picture'
 
   accepts_nested_attributes_for :attached_pictures, allow_destroy: true
   accepts_nested_attributes_for :pictures, allow_destroy: true

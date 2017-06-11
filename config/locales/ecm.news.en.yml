@@ -21,7 +21,9 @@ en:
           back: Back
           more: Continue reading
   routes:
-    ecm_news: news
+    ecm_news_engine: news
+    items: items
+    page: page
   views:
     pagination:
       first: "&laquo; First"

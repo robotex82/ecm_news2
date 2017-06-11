@@ -21,7 +21,9 @@ de:
           back: Zurück
           more: Weiterlesen
   routes:
-    ecm_news: news
+    ecm_news_engine: news
+    items: eintraege
+    page: seite
   views:
     pagination:
       first: "&laquo; Erste Seite"
