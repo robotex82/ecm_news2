@@ -1,12 +1,17 @@
 - content_for :meta_description, t('.title')
 - content_for :title, t('.title')
+.row
+  .col-lg-12
+    %h1= t('.title')
 
-%h1= t('.title')
+  .col-lg-12
+    - @items.each_with_index do |item, index|
+      = render partial: 'item_in_list', locals: { item: item, index: (index + 1) }
 
-- @items.each_with_index do |item, index|
-  = render partial: 'item_in_list', locals: { item: item, index: (index + 1) }
+  .col-lg-12
+    = paginate @items, theme: 'twitter-bootstrap-3'
 
-= paginate @items, theme: 'twitter-bootstrap-3'
-
-= bootstrap_button(to: main_app.root_path, context: :primary) do
-  = t('.back')
+  .col-lg-12
+    .well.page-actions
+      = bootstrap_button(to: main_app.root_path, context: 'secondary btn-default') do
+        = t('.back')
