@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'bootstrap-kaminari-views'
   s.add_dependency 'ecm_pictures2'
   s.add_dependency 'haml-rails'
-  s.add_dependency 'twitter-bootstrap-components-rails'
+  s.add_dependency 'twitter-bootstrap-components-rails', '>= 0.6.1'
 
   # Dummy app
   s.add_development_dependency 'rails-dummy'

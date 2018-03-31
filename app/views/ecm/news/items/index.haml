@@ -4,11 +4,10 @@
   .col-lg-12
     %h1= t('.title')
 
-  .col-lg-12
-    - @items.each_with_index do |item, index|
-      = render partial: 'item_in_list', locals: { item: item, index: (index + 1) }
+  - @items.each_with_index do |item, index|
+    = render partial: 'item_in_list', locals: { item: item, index: (index + 1) }
 
-  .col-lg-12
+  .col-lg-12.text-center
     = paginate @items, theme: 'twitter-bootstrap-3'
 
   .col-lg-12
